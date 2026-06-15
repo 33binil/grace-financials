@@ -17,7 +17,7 @@ export default function Contact() {
   }
 
   return (
-    <main>
+    <main className="mt-giant">
       <section className="bg-gradient-to-br from-primary via-primary-container to-primary py-xxl text-on-primary">
         <div className="max-w-container-max mx-auto px-lg">
           <h1 className="text-display-lg mb-md">Get in Touch</h1>

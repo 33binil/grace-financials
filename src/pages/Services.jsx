@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 export default function Services() {
   return (
-    <main>
+    <main className="mt-giant">
       {/* Hero Section */}
-      <header className="relative pt-giant pb-xxl md:pt-[160px] md:pb-[100px] overflow-hidden">
+      <header className="relative pb-xxl md:pt-[160px] md:pb-[100px] overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
             className="w-full h-full object-cover opacity-10"

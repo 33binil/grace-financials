@@ -9,9 +9,9 @@ const services = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="mt-giant">
       {/* Hero Section */}
-      <section className="relative pt-giant pb-xxl md:pt-giant md:pb-giant bg-primary overflow-hidden min-h-[600px]">
+      <section className="relative pb-xxl md:pb-giant bg-primary overflow-hidden min-h-[600px]">
         <div className="absolute inset-0 z-0 opacity-40">
           <img
             className="w-full h-full object-cover"
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
         <div className="max-w-container-max mx-auto px-lg relative z-20 flex flex-col md:flex-row items-center min-h-[600px] gap-xl">
-          <div className="w-full md:w-3/5 text-white">
+          <div className="w-full md:w-3/5 text-white pt-xl md:pt-0">
             <h1 className="text-display-lg-mobile md:text-display-lg mb-md leading-tight">
               Your Trusted Financial Partner for Every Financial Goal
             </h1>

@@ -17,7 +17,7 @@ export default function Blog() {
   const filtered = activeCategory === 'All Insights' ? posts : posts.filter(p => p.category === activeCategory)
 
   return (
-    <main>
+    <main className="mt-giant">
       <section className="bg-surface py-xxl border-b border-outline-variant/20">
         <div className="max-w-container-max mx-auto px-lg">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-lg">

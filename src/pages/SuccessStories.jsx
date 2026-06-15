@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export default function SuccessStories() {
   return (
-    <main>
+    <main className="mt-giant">
       <section className="relative py-giant overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent z-10"></div>
