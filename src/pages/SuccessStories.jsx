@@ -1,5 +1,14 @@
 import { Link } from 'react-router-dom'
 
+const reviews = [
+  {
+    name: 'For Checking',
+    role: 'Grace',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpfLMMyKMSuZ7-6rBW1jStfssy2yBT0l4nYnTR6MhGuSXVeKcA_LqP7fTGt99RCY_wYQ_ximMHyE9qL3abHs9VY7Z9pz-gQruVMHNcZBjNnRd3xzqJqJNiFXPQWn-sQq0qpWc-rUeEfGMmqtG59QOj1Z63Z1DWKWapjZRMYxm9uDvOFDls3gFA2QBncpDuIeNrlPHOgzXjgypPbxSniNU3petuH3-wN_rNWDVgCR6wNE-M2lWcnSvmUA',
+    quote: "The transparency Grace Financial offered during our home loan process was refreshing. They didn't just give us a loan; they gave us a financial roadmap for the next decade.",
+  },
+]
+
 export default function SuccessStories() {
   return (
     <main className="mt-giant">
@@ -38,98 +47,37 @@ export default function SuccessStories() {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-            <div className="glass-card p-xl rounded-xl flex flex-col h-full">
-              <div className="flex gap-xs text-tertiary-fixed-dim mb-md">
-                {[1,2,3,4,5].map(i => (
-                  <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                ))}
-              </div>
-              <p className="text-body-md text-on-surface mb-xl italic">"The transparency Grace Financial offered during our home loan process was refreshing. They didn't just give us a loan; they gave us a financial roadmap for the next decade."</p>
-              <div className="mt-auto flex items-center gap-md">
-                <img className="w-14 h-14 rounded-full object-cover" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGp4VE1s6NS_aQOqMh39PaXHZ5zA064JzLdc0YuuQRml95EKYdqnq93ViwBI2O5sKkCDRtq-WUhC9yyVeza0b2SSAKBJ_vwcKZ4evChcajTLtPz0s302qgjkLhPSM24fM4nvSNe_efisSM44_R-jQp7ESGpUpZOZeZiN9pS4Rfk8jQ4xJ6s19L5oVg-J9x9Ve4EY6alVVmf5sUKxCbePPO4U6qHiksYnlLdDd0dKDjedrGeVaPAE6rcg"/>
-                <div>
-                  <h4 className="text-headline-sm text-primary">Rajesh Kumar</h4>
-                  <p className="text-label-sm text-on-surface-variant uppercase tracking-wider">Homeowner, Mumbai</p>
+            {reviews.map((r) => (
+              <div key={r.name} className="glass-card p-xl rounded-xl flex flex-col h-full">
+                <div className="flex gap-xs text-tertiary-fixed-dim mb-md">
+                  {[1,2,3,4,5].map(i => (
+                    <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  ))}
+                </div>
+                <p className="text-body-md text-on-surface mb-xl italic">&ldquo;{r.quote}&rdquo;</p>
+                <div className="mt-auto flex items-center gap-md">
+                  <img className="w-14 h-14 rounded-full object-cover" alt="" src={r.img} />
+                  <div>
+                    <h4 className="text-headline-sm text-primary">{r.name}</h4>
+                    <p className="text-label-sm text-on-surface-variant uppercase tracking-wider">{r.role}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="glass-card p-xl rounded-xl flex flex-col h-full">
-              <div className="flex gap-xs text-tertiary-fixed-dim mb-md">
-                {[1,2,3,4,5].map(i => (
-                  <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                ))}
-              </div>
-              <p className="text-body-md text-on-surface mb-xl italic">"Our startup expansion wouldn't have been possible without their business funding expertise. Their team understood our unique cash flow needs and structured a perfect plan."</p>
-              <div className="mt-auto flex items-center gap-md">
-                <img className="w-14 h-14 rounded-full object-cover" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs64kwrCDcsTPOdNqm_KNJAIq1o0Ktgm3zOgbZ08fRPP8CcdSET0dC__dLxQper-219kdSlvc4RbF5sTgHLYU92CFdzt9l4c7W3S5m91Rfg2msBj-QzXjQ5a0f4PoOmwDIb5SqjtEnus_vY6LmATX0aidnBw-QQArQ2tjz3j9UX7P7MMsU979HzlOM7z72grUFg9QdiQSju8lsKXu0xOuWbNfQFoPg66hwxX5p72LNeGmI8h-2iCC0VQ"/>
-                <div>
-                  <h4 className="text-headline-sm text-primary">Ananya Sharma</h4>
-                  <p className="text-label-sm text-on-surface-variant uppercase tracking-wider">CEO, TechVeda</p>
-                </div>
-              </div>
-            </div>
-            <div className="glass-card p-xl rounded-xl flex flex-col h-full">
-              <div className="flex gap-xs text-tertiary-fixed-dim mb-md">
-                {[1,2,3,4,5].map(i => (
-                  <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                ))}
-              </div>
-              <p className="text-body-md text-on-surface mb-xl italic">"Highly professional and remarkably fast. They managed to secure my vehicle loan within 48 hours, allowing me to close the deal on my dream car without any stress."</p>
-              <div className="mt-auto flex items-center gap-md">
-                <img className="w-14 h-14 rounded-full object-cover" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVMwhFiqJBe8xH5ZE3ANfAhxuJK11GdrseBCU-balXE-1BkyNQsSMmBCDou_hdMbihDWAc38nTkPYg107UF9vjvlSWJszATgr9Q_Xo5gsGahp7iBNrcBWh9bPpNILhIy9qsUJwT5CY6p0axFSo1DKF7EmqJNpx3KVC32LTb5PR7-lzcjtpgFs8vB5299TBj6bIY5x-66XS7FYL4Qvcs0X30HMhuIoO_CCObRyBmOSemwKvNwQPOZzaGQ"/>
-                <div>
-                  <h4 className="text-headline-sm text-primary">Vikram Singh</h4>
-                  <p className="text-label-sm text-on-surface-variant uppercase tracking-wider">Architect, Delhi</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="py-xxl bg-primary text-on-primary">
         <div className="max-w-container-max mx-auto px-lg">
-          <div className="mb-xxl text-center md:text-left">
-            <h2 className="text-display-lg-mobile md:text-display-lg mb-sm">Bento Case Studies</h2>
-            <p className="text-on-primary-container text-body-lg">Proven methodologies and data-backed success.</p>
+          <div className="mb-xxl">
+            <h2 className="text-display-lg-mobile md:text-display-lg mb-sm">Case Studies</h2>
+            <p className="text-on-primary-container text-body-lg">Real success stories from our valued clients.</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-lg h-auto md:h-[600px]">
-            <div className="md:col-span-2 bg-on-primary-fixed text-on-primary p-xl rounded-xl flex flex-col justify-between overflow-hidden relative group">
-              <div className="relative z-10">
-                <span className="text-label-sm uppercase tracking-widest text-secondary-fixed mb-md block">Business Expansion</span>
-                <h3 className="text-display-lg-mobile md:text-display-lg mb-md">₹50Cr Funding for Logistics Titan</h3>
-                <p className="text-body-lg text-on-primary-container max-w-lg mb-xl">Grace Financial facilitated a complex restructuring and debt-funding package for a Tier-2 logistics provider, resulting in 40% YoY growth.</p>
-                <div className="grid grid-cols-3 gap-lg border-t border-outline/30 pt-lg">
-                  <div>
-                    <div className="text-headline-md font-bold text-secondary-fixed">40%</div>
-                    <div className="text-label-sm text-on-primary-container">Revenue Increase</div>
-                  </div>
-                  <div>
-                    <div className="text-headline-md font-bold text-secondary-fixed">12</div>
-                    <div className="text-label-sm text-on-primary-container">Days for Approval</div>
-                  </div>
-                  <div>
-                    <div className="text-headline-md font-bold text-secondary-fixed">1.2%</div>
-                    <div className="text-label-sm text-on-primary-container">Interest Saved</div>
-                  </div>
-                </div>
-              </div>
-              <img className="absolute -right-20 -bottom-20 w-1/2 h-1/2 object-cover rounded-full opacity-20 grayscale group-hover:opacity-40 transition-opacity" alt="" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJnB_9L1fYY44Afxr1DQWGni0bnWuB9L5d7xeUVYHbTa-CS8eB4e6lnuH21SQ63ca_MlfZGR6J1fumCHW8LScWDgczB2wja7oJdS_1_EmINMlCQK-IDIby5eIZOdfVN__ioBE_kZsdoTOiq5La_NCWdXqGj_YkW6DfYlbQDKdq-1Zj15Zo6SWSS9Yx8gYIJfh-6EJhgir3d54Jrc-bP4aDEv-EqdQzq4Iml6qrMe3XLuoAt5V1-fpnMg"/>
-            </div>
-            <div className="flex flex-col gap-lg">
-              <div className="bg-surface-container-highest text-primary p-lg rounded-xl flex-1 group cursor-pointer hover:bg-secondary-fixed transition-all">
-                <span className="text-label-sm uppercase text-secondary mb-sm block">Home Loans</span>
-                <h4 className="text-headline-md mb-sm">The NRI Dream Home</h4>
-                <p className="text-body-sm text-on-surface-variant">Seamless cross-border funding for a luxury villa in Goa.</p>
-                <div className="mt-md text-secondary font-bold flex items-center gap-xs">Read Full Story <span className="material-symbols-outlined">arrow_forward</span></div>
-              </div>
-              <div className="bg-secondary-container text-on-secondary-container p-lg rounded-xl flex-1 group cursor-pointer hover:bg-on-secondary-container hover:text-on-secondary transition-all">
-                <span className="text-label-sm uppercase text-white/70 mb-sm block">Medical Financing</span>
-                <h4 className="text-headline-md mb-sm">Swift Healthcare Support</h4>
-                <p className="opacity-80 text-body-sm">Urgent funding for hospital equipment modernization.</p>
-                <div className="mt-md font-bold flex items-center gap-xs">Read Full Story <span className="material-symbols-outlined">arrow_forward</span></div>
-              </div>
-            </div>
+          <div className="text-center py-xxl border-2 border-dashed border-on-primary/20 rounded-xl">
+            <span className="material-symbols-outlined text-[64px] text-on-primary/40 mb-lg">auto_stories</span>
+            <h3 className="text-headline-lg mb-sm">Coming Soon</h3>
+            <p className="text-body-lg text-on-primary-container max-w-lg mx-auto">We're documenting our success stories. Check back soon to read about how we've helped our clients achieve their financial goals.</p>
           </div>
         </div>
       </section>
