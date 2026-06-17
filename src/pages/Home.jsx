@@ -1,5 +1,20 @@
 import { Link } from 'react-router-dom'
 
+const testimonials = [
+  {
+    name: 'Check1',
+    role: 'Grace Financials',
+    quote: '"Grace Financial made my home buying process incredibly smooth. Their team managed everything from documentation to follow-ups with the bank. Highly recommended!"',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpfLMMyKMSuZ7-6rBW1jStfssy2yBT0l4nYnTR6MhGuSXVeKcA_LqP7fTGt99RCY_wYQ_ximMHyE9qL3abHs9VY7Z9pz-gQruVMHNcZBjNnRd3xzqJqJNiFXPQWn-sQq0qpWc-rUeEfGMmqtG59QOj1Z63Z1DWKWapjZRMYxm9uDvOFDls3gFA2QBncpDuIeNrlPHOgzXjgypPbxSniNU3petuH3-wN_rNWDVgCR6wNE-M2lWcnSvmUA',
+  },
+  {
+    name: 'Check 2',
+    role: 'Grace Financials',
+    quote: '"The business loan helped our startup scale at the right time. The interest rates they secured were significantly lower than what I was finding on my own."',
+    img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCpfLMMyKMSuZ7-6rBW1jStfssy2yBT0l4nYnTR6MhGuSXVeKcA_LqP7fTGt99RCY_wYQ_ximMHyE9qL3abHs9VY7Z9pz-gQruVMHNcZBjNnRd3xzqJqJNiFXPQWn-sQq0qpWc-rUeEfGMmqtG59QOj1Z63Z1DWKWapjZRMYxm9uDvOFDls3gFA2QBncpDuIeNrlPHOgzXjgypPbxSniNU3petuH3-wN_rNWDVgCR6wNE-M2lWcnSvmUA',
+  },
+]
+
 const services = [
   { icon: 'directions_car', title: 'Vehicle Loans', desc: 'Competitive rates and quick approvals for your next private or commercial vehicle.', slug: 'vehicle' },
   { icon: 'home', title: 'Home Loans', desc: 'Achieve your dream of homeownership with our low-interest rate mortgage options.', slug: 'home' },
@@ -170,20 +185,7 @@ export default function Home() {
             <p className="text-body-md text-on-surface-variant">What our clients say about their journey with Grace Financial.</p>
           </div>
           <div className="flex flex-col md:flex-row gap-lg">
-            {[
-              {
-                name: 'Anjali Sharma',
-                role: 'Home Loan Client',
-                quote: '"Grace Financial made my home buying process incredibly smooth. Their team managed everything from documentation to follow-ups with the bank. Highly recommended!"',
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDaFcTZWTFmQtRq2ho2NFbNCIFJubC3dWR_jLYNPvgNjFoQv935_aH9mSU0Iob8hULqIOFqvm6pD_ZI3wGZll6h8tXSbWqfVDK4ikXCiJOI3qLg_D3gwwH1s8X9iFFG2yKzcD7UtmLa-nyJkmW_7AtyUtnEGuYTila9j7yGZLKYmvhumq5uJtfDpadMKK3Fdly0daE0sHIf9NUvSdHbY_RzjnZ-OsFBMDFtYPAZnG0zY2QcJrqYejixRQ',
-              },
-              {
-                name: 'Vikram Goel',
-                role: 'SME Business Owner',
-                quote: '"The business loan helped our startup scale at the right time. The interest rates they secured were significantly lower than what I was finding on my own."',
-                img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDIEivJLYN5S0OsZ5ug0Mf3jZT2vcdRC350tPN_2nC_f-D3UVCT6Gf9yvPbmxdLwvUCMoqju91RMTCpCZo2_PrAnELSeAgO1vTzaDGu7lQ1h0nlnJiIEy45F7C4vxzd1c6jJvXW0OzhF8knriIZB9cu81byxOWQFdyNpXWY_EshZgZdhHPtexphp-moTESj0-9J9Jvu2jrQNxKaparhrvYz0C4WlHgBGq2o7IlP0dPIg715AtCLgDklVQ',
-              },
-            ].map((t) => (
+            {testimonials.map((t) => (
               <div key={t.name} className="flex-1 bg-white p-xl rounded-xl border border-outline-variant/30 custom-shadow">
                 <div className="flex text-tertiary-fixed-dim mb-md">
                   {[...Array(5)].map((_, i) => (

@@ -14,7 +14,7 @@ export default function Services() {
           <div className="absolute inset-0 bg-gradient-to-b from-surface via-surface/80 to-surface"></div>
         </div>
         <div className="relative z-10 max-w-container-max mx-auto px-lg text-center pt-xl md:pt-0">
-          <span className="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm mb-lg">OUR PORTFOLIO</span>
+          <span className="inline-block px-md py-xs bg-primary-fixed text-on-primary-fixed rounded-full text-label-sm mb-lg">OUR SERVICES</span>
           <h1 className="text-display-lg-mobile md:text-display-lg text-primary mb-md max-w-3xl mx-auto">
             Financial Solutions Tailored For Every Need.
           </h1>

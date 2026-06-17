@@ -3,7 +3,7 @@ export default function WhatsAppButton() {
     <a
       aria-label="Chat with us on WhatsApp"
       className="fixed bottom-xl right-xl z-50 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-[0_8px_24px_rgba(37,211,102,0.4),0_2px_6px_rgba(0,0,0,0.2),inset_0_-3px_6px_rgba(0,0,0,0.15),inset_0_3px_6px_rgba(255,255,255,0.2)] hover:shadow-[0_12px_32px_rgba(37,211,102,0.5),0_4px_12px_rgba(0,0,0,0.25),inset_0_-3px_6px_rgba(0,0,0,0.15),inset_0_3px_6px_rgba(255,255,255,0.2)] hover:scale-110 active:scale-95 transition-all duration-300"
-      href="https://wa.me/919876543210"
+      href="https://wa.me/919995533809"
       target="_blank"
       rel="noopener noreferrer"
     >
