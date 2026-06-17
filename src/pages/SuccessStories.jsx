@@ -71,7 +71,7 @@ export default function SuccessStories() {
       <section className="py-xxl bg-primary text-on-primary">
         <div className="max-w-container-max mx-auto px-lg">
           <div className="mb-xxl">
-            <h2 className="text-display-lg-mobile md:text-display-lg mb-sm">Case Studies</h2>
+            <h2 className="text-display-lg-mobile md:text-display-lg mb-sm">The path to Grace's success.</h2>
             <p className="text-on-primary-container text-body-lg">Real success stories from our valued clients.</p>
           </div>
           <div className="text-center py-xxl border-2 border-dashed border-on-primary/20 rounded-xl">

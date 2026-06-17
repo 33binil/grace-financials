@@ -127,7 +127,7 @@ export default function EmiCalculator() {
                 </div>
               </div>
 
-              <Link to="/contact" className="btn-primary block text-center mt-lg">Apply for this Loan</Link>
+              <Link to="/apply" className="btn-primary block text-center mt-lg">Apply for this Loan</Link>
             </div>
           </div>
 
