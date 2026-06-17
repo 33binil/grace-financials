@@ -141,10 +141,10 @@ export default function Application() {
                 </Link>
                 <Link to="/contact" className="flex items-center gap-md text-body-lg hover:underline">
                   <span className="material-symbols-outlined">mail</span>
-                  info.gracefinancialconsultency@gmail.com
+                  info.gracefinancialconsultqncy@gmail.com
                 </Link>
               </div>
-              <Link to="https://wa.me/919820012345" className="flex items-center gap-md mt-md bg-[#25D366] text-white p-md rounded-lg justify-center hover:shadow-lg transition-all">
+              <Link to="https://wa.me/919995533809" className="flex items-center gap-md mt-md bg-[#25D366] text-white p-md rounded-lg justify-center hover:shadow-lg transition-all">
                 <span className="material-symbols-outlined">chat</span>
                 Chat on WhatsApp
               </Link>
