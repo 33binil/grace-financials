@@ -142,19 +142,17 @@ export default function SuccessStories() {
           </div>
           <div className="masonry-grid gap-lg">
             {[
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuCHg2eofdWUQDUKGAv1PSeQULjxmhnTZjDdR7okVWs7bJvLxylwlMfvOoyi-fwPM5PHiteMDMnxp5VHrITCnRIR2mcYvCxHNdkJ5pp09gGTv1hGO_xhMAjEhwcWpEM40Z7RSJEp28Z5Q5bby_VH_9uueTzJPE97u71d4Z9eS-0XdTdY26nIXdgjxq8jWQZZJVtfBgF2_Ehk3vGcYdYnB5NC8zIhwWP3Ny4axOTqXRCVY_iMo-oMs8zUgg',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuCHac7_jtSWFs8pRsHCn7TUwWyyas2rxYBW1QeYuJplk9GGBvSyv5VpntnI52BA2rBRYbrvkkAE5QWbu1TVbdWlFj-gAjbuG2KPf6eub4T2XMBQVP5-9__vFUY3r3-MJL0NtyNQtrEROTkj1xOeNokvf434xIPquMgHAqLY2YyJMSFlYw4nLU2aBzJ_GdhZGRUT60CZGSdzbWZNCnQEdwi7Tsv4g6vvRsd_gv2aznuR7wZsA_GuzHrzFw',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuDGPJVNetFRlsLk6woNO4rPySDY53v4DoNTK-8YKlSWL1wd3EdjOa5es2fG_IbGl7RFPqKiqLKQdqYXLKvN8T1f2tNVu61_VzTqGuat1TeMWqOOwJONRuMOUd6ERZ7dWLN22XvYcwEx4bdGDNmJPizOauhowwXH-TsVMv3eNJn0wIrt6Cd_XKQ-lhuqahh34kndZpp3jSRUyErzS6ERbOuFVhe8qW6GtFYYYyecbs2lgBPWIjYmvYotEg',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuABENbmauJBKM0zUUahPZfSJpAce4vkLI_OYAalgPOD3Ccjf328Jmc781Rqt1AG3DW6rgEJD1sGjZSbs_ta28nQR1EXPsb5emO-J7sJOEjEFA64MO4-7GzGOb2tpmyvrcGiLKGMsaJtDwCsrCXjZpR_vWi88beLno26c4-INfYz7HHdG3JLNGADHTLX94v0Ij-o3LKN_dgBdNMD1j8mpn_9HNe9oz7hJeHqv4Hifw83HRbVhsxjZH1OFA',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuCpSsBeXkTHVSgZAtCia5XKA-FRgEYOi3TfxLsd4k2H8dmHYViFK_CNftpp2qpoWm8_AjZs38AvjU2V74csZsWJR1se3qVwUgTBJIpWE_ends6DSIgG9fLzoxfOnfjYB-_iM3FVEiW3BPXFxR5hYV0rShqB2ZVP5BKkIsz5uyHLr6_QxSJ-CPuTq8Wx9a68g7_G-D72eMa0qjKscrgZBwuJstiGxORgu_0M5NAD9NIl4kKJVSU8TwKNfw',
-              'https://lh3.googleusercontent.com/aida-public/AB6AXuAlYIugirJ-XpFU1aaDhiH7BC2q-Xcb44yXO1DJ8e8Bn7GtFPwxd1Ms7f3Xg-2cWY3_fY9FkqnrtZeycxxnXs1ivhdKPqBsSINAWzvJ_GV0n9V5vJ9vBvQ4hIe2wZnikt_DM7hqXq68HzPPJWtn-PaHOBPe7dVmd79AfFVTErSGV4PftMH39vmwli0PKWQjGhoEukL1Za_Ni8u_vJs04_EC_FgP_g6X75J2pWC47_7VUinFE5EuyUczig',
-            ].map((url, i) => (
-              <div key={i} className="mb-lg break-inside-avoid">
-                <div className="rounded-xl overflow-hidden shadow-sm group">
-                  <img className="w-full h-auto group-hover:scale-105 transition-transform duration-500" alt="" src={url} />
+              { url: 'https://lh3.googleusercontent.com/gps-cs-s/APNQkAG2lnoN44jRvXe4sz_CKig7vEU9qYE8KNct1nMadTCTKIpexYBp0rHI4KMgdm3YK9AmcrMlt0gXZWWAEhogqfFkWGF1iXxYJ5A8yEe4cHQiQPqTteH0gshBG9i8cztUXtw94yFhn8iVVm0z=s0'},
+            ].map((item, i) => {
+              const img = (
+                <div key={i} className="mb-lg break-inside-avoid">
+                  <div className="rounded-xl overflow-hidden shadow-sm group">
+                    <img className="w-full h-auto group-hover:scale-105 transition-transform duration-500" alt="" src={item.url} />
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+              return item.link ? <a key={i} href={item.link} target="_blank" rel="noopener noreferrer">{img}</a> : img
+            })}
           </div>
         </div>
       </section>
