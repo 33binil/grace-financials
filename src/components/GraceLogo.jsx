@@ -4,7 +4,7 @@ export default function GraceLogo() {
   return (
     <Link to="/" className="flex items-center gap-sm group shrink-0">
       <img
-        src="/grace_logo1_bgr.png"
+        src="/grace_logo1_bgr.webp"
         alt="Grace Financial"
         className="h-10 w-auto object-contain"
       />

@@ -4,7 +4,7 @@ export default function Loading() {
       <div className="text-center">
         <div className="animate-pulse">
           <img
-            src="/grace_logo1_bgr.png"
+            src="/grace_logo1_bgr.webp"
             alt="Grace Financial"
             className="h-16 w-auto object-contain mx-auto mb-lg animate-bounce"
           />
