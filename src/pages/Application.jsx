@@ -136,16 +136,16 @@ export default function Application() {
             </div>
 
             <div className="bg-primary-container p-xl rounded-xl text-on-primary-container space-y-lg">
-              <h3 className="text-headline-sm">Need Assistance?</h3>
-              <p className="text-body-md opacity-80">Our loan experts are available to help you with the application process.</p>
+              <h3 className="text-headline-sm text-white">Need Assistance?</h3>
+              <p className="text-body-md opacity-80 text-white">Our loan experts are available to help you with the application process.</p>
               <div className="space-y-md">
-                <Link to="/contact" className="flex items-center gap-md text-body-lg hover:underline">
-                  <span className="material-symbols-outlined">call</span>
+                <Link to="/contact" className="flex text-white items-center gap-md text-body-lg hover:underline">
+                  <span className="material-symbols-outlined text-white">call</span>
                   +91 97782 92234
                 </Link>
                 <div className="flex items-start gap-md text-body-lg">
-                  <span className="material-symbols-outlined flex-shrink-0">mail</span>
-                  <span className="break-all">info.gracefinancialconsultancy@gmail.com</span>
+                  <span className="material-symbols-outlined text-white flex-shrink-0">mail</span>
+                  <span className="break-all text-white">info.gracefinancialconsultancy@gmail.com</span>
                 </div>
               </div>
               <Link to="https://wa.me/919995533809" className="flex items-center gap-md mt-md bg-[#25D366] text-white p-md rounded-lg justify-center hover:shadow-lg transition-all">

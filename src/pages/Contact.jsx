@@ -71,7 +71,7 @@ export default function Contact() {
               <h3 className="text-headline-sm text-primary">Contact Information</h3>
               <div className="flex gap-lg items-start">
                 <div className="bg-primary-container p-sm rounded-lg text-on-primary-container">
-                  <span className="material-symbols-outlined">call</span>
+                  <span className="material-symbols-outlined text-white">call</span>
                 </div>
                 <div className="min-w-0">
                   <p className="text-label-md text-on-surface-variant">Phone</p>
@@ -81,7 +81,7 @@ export default function Contact() {
               </div>
               <div className="flex gap-lg items-start">
                 <div className="bg-primary-container p-sm rounded-lg text-on-primary-container">
-                  <span className="material-symbols-outlined">mail</span>
+                  <span className="material-symbols-outlined text-white">mail</span>
                 </div>
                 <div className="min-w-0">
                   <p className="text-label-md text-on-surface-variant">Email</p>
@@ -91,7 +91,7 @@ export default function Contact() {
               </div>
               <div className="flex gap-lg items-start">
                 <div className="bg-primary-container p-sm rounded-lg text-on-primary-container">
-                  <span className="material-symbols-outlined">location_on</span>
+                  <span className="material-symbols-outlined text-white">location_on</span>
                 </div>
                 <div className="min-w-0">
                   <p className="text-label-md text-on-surface-variant">Office Address</p>
@@ -100,7 +100,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-primary-container p-xl rounded-xl text-on-primary-container space-y-lg">
+            <div className="bg-primary-container p-xl rounded-xl text-white space-y-lg">
               <div className="flex justify-between items-center">
                 <h3 className="text-headline-sm">Business Hours</h3>
                 <span className="bg-emerald-500/20 text-emerald-300 text-label-sm px-sm py-xs rounded-full">Open Now</span>
