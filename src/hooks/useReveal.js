@@ -2,15 +2,17 @@ import { useState, useRef, useLayoutEffect } from 'react'
 
 export function useReveal() {
   const ref = useRef(null)
-  const [revealed, setRevealed] = useState(true)
+  const [revealed, setRevealed] = useState(false)
 
   useLayoutEffect(() => {
     const el = ref.current
     if (!el) return
     const rect = el.getBoundingClientRect()
-    if (rect.top < window.innerHeight) return
+    if (rect.top < window.innerHeight) {
+      setRevealed(true)
+      return
+    }
 
-    setRevealed(false)
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) { setRevealed(true); observer.unobserve(el) }
     }, { threshold: 0.15 })

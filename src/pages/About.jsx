@@ -10,16 +10,25 @@ export default function About() {
 
   return (
     <main className="mt-giant">
+      <style>{`
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .anim-hero { animation: fadeInUp 0.8s ease-out both; }
+        .anim-hero-delay { animation: fadeInUp 0.8s ease-out 0.3s both; }
+        .anim-hero-delay-2 { animation: fadeInUp 0.8s ease-out 0.6s both; }
+        .anim-fade-in { animation: fadeIn 0.6s ease-out both; }
+      `}</style>
+
       {/* Hero Section: Company Story */}
       <section className="relative pt-xxl pb-giant bg-surface overflow-hidden">
         <div className="max-w-container-max mx-auto px-lg grid grid-cols-1 md:grid-cols-2 gap-xxl items-center">
           <div className="z-10">
-            <span className="text-secondary font-label-lg uppercase tracking-wider mb-sm block">Our Journey</span>
-            <h1 className="text-display-lg text-primary mb-lg">Empowering Aspirations Since 2010</h1>
-            <p className="text-body-lg text-on-surface-variant mb-xl leading-relaxed">
+            <span className="anim-hero text-secondary font-label-lg uppercase tracking-wider mb-sm block">Our Journey</span>
+            <h1 className="anim-hero-delay text-display-lg text-primary mb-lg">Empowering Aspirations Since 2010</h1>
+            <p className="anim-hero-delay-2 text-body-lg text-on-surface-variant mb-xl leading-relaxed">
               Grace Financial Consultancy began with a singular vision: to bridge the gap between financial complexity and human ambition. Based in the heart of India, we've evolved from a small advisory firm into a premier consultancy, helping thousands of families and entrepreneurs navigate their financial futures with confidence and clarity.
             </p>
-            <div className="flex gap-md flex-wrap">
+            <div className="anim-hero-delay-2 flex gap-md flex-wrap">
               <div className="flex items-center gap-sm">
                 <span className="material-symbols-outlined text-secondary" style={{ fontVariationSettings: "'FILL' 1" }}>verified</span>
                 <span className="font-label-lg text-primary">SEBI Registered</span>
@@ -30,7 +39,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="relative group">
+          <div className="anim-fade-in relative group" style={{ animationDelay: '0.4s' }}>
             <div className="absolute -inset-4 bg-secondary-container/10 rounded-xl blur-2xl group-hover:bg-secondary-container/20 transition-all duration-500"></div>
             <img
               className="relative rounded-xl shadow-2xl w-full h-[500px] object-cover"
