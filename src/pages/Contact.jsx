@@ -92,8 +92,8 @@ export default function Contact() {
                 <div className="min-w-0">
                   <p className="text-label-md text-on-surface-variant">Email</p>
                   <p className="text-body-xl text-primary break-words">info.gracefinancialconsultancy@gmail.com</p>
-                  <p className="text-body-md text-on-surface-variant break-words">bdm1@gracefinancials.com</p>
-                  <p className="text-body-md text-on-surface-variant break-words">bdm2@gracefinancials.com</p>
+                  <p className="text-body-md text-on-surface-variant break-words">bdm1.gracefinancials@gmail.com</p>
+                  <p className="text-body-md text-on-surface-variant break-words">bdm2.gracefinancials@gmail.com</p>
                 </div>
               </div>
               <div className="flex gap-lg items-start">
